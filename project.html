@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <title>Black Sun</title>
+</head>
+
+<body>
+
+   <div class="warpper">
+      <!-- Header -->
+      <header class="header">
+         <div class="container">
+            <div class="header__inner">
+               <a href="index.html" class="logo">
+                  <div class="logo__top">BS</div>
+                  <div class="logo__bottomn">studio</div>
+               </a>
+
+               <!-- menu -->
+               <nav class="menu">
+
+                  <button class="burger__menu">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </button>
+
+                  <ul class="menu__list">
+
+                     <li class="menu__close">
+                        <button class="menu__close-btn">
+                           <img src="img/close.svg" alt="">
+                        </button>
+                     </li> 
+
+                     <li class="menu__list-item">
+                        <a href="index.html" class="menu__list-link">Home</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="index.html#contact" class="menu__list-link">Contacts</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="gallery.html" class="menu__list-link">Gallery</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="project.html" class="menu__list-link">Project / Gallery</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="index.html#info" class="menu__list-link">Info</a>
+                     </li>                                         
+
+                     <ul class="burger__app-menu">                      
+                        <li class="burger__app-item">
+                           <a href="https://facebook.com" target="_blank" class="burger__app-link">
+                              <img src="img/facebook.svg" alt="" class="burger__app-img">
+                           </a>
+                        </li>
+                        <li class="burger__app-item">
+                           <a href="https://instagram.com" target="_blank" class="burger__app-link">
+                              <img src="img/instagram.svg" alt="" class="burger__app-img">
+                           </a>
+                        </li>
+                        <li class="burger__app-item">
+                           <a href="https://web.telegram.org/" target="_blank" class="burger__app-link">
+                              <img src="img/telegram.svg" alt="" class="burger__app-img">
+                           </a>
+                        </li>
+                     </ul> 
+
+                  </ul>                   
+               </nav>
+
+               <!-- app -->
+               <ul class="app">
+                  <li class="app__item">
+                     <a href="https://facebook.com" target="_blank" class="app__item-link">
+                        <img src="img/facebook.svg" alt="" class="app__item-img">
+                     </a>
+                  </li>
+                  <li class="app__item">
+                     <a href="https://instagram.com" target="_blank" class="app__item-link">
+                        <img src="img/instagram.svg" alt="" class="app__item-img">
+                     </a>
+                  </li>
+                  <li class="app__item">
+                     <a href="https://web.telegram.org/" target="_blank" class="app__item-link">
+                        <img src="img/telegram.svg" alt="" class="app__item-img">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+
+      <!-- Main -->
+      <main class="main">
+
+         <section class="project">
+            <div class="container">
+               <div class="tabs">
+                  <div class="tabs__btn">
+                     <button class="tabs__btn-item tabs__btn-item--active" data-button="content-1">Gallery</button>
+                     <button class="tabs__btn-item" data-button="content-2">Project</button>
+                  </div>
+
+                  <div class="tabs__content">
+                     <!-- GALLERY BTN CONTENT -->
+                     <div class="tabs__content-item tabs__content-item--active" id="content-1">
+                        <div class="card">
+                           <img src="img/gallery-img.jpg" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                           <img src="img/gallery-img.jpg" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                           <img src="img/gallery-img.jpg" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                           <img src="img/gallery-img.jpg" alt="" class="card-img">
+                        </div>
+                     </div>
+                     <!-- PROJECT BTN CONTENT -->
+                     <div class="tabs__content-item" id="content-2">
+                        <div class="card">
+                           <img src="img/project-img.jpg" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                           <img src="img/project-img.jpg" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                           <img src="img/project-img.jpg" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                           <img src="img/project-img.jpg" alt="" class="card-img">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+
+      <section id="info">
+         <div class="container">
+            <ul class="info__app">
+               <li class="info__item">
+                  <a href="https://mail.com" target="_blank" class="app__item-link">
+                     <img src="img/email.svg" alt="" class="info__item-img">
+                  </a>
+               </li>
+               <li class="info__item">
+                  <a href="https://facebook.com" target="_blank" class="app__item-link">
+                     <img src="img/facebook.svg" alt="" class="info__item-img">
+                  </a>
+               </li>
+               <li class="info__item">
+                  <a href="https://instagram.com" target="_blank" class="app__item-link">
+                     <img src="img/instagram.svg" alt="" class="info__item-img">
+                  </a>
+               </li>
+               <li class="info__item">
+                  <a href="https://web.telegram.org/" target="_blank" class="app__item-link">
+                     <img src="img/telegram.svg" alt="" class="info__item-img">
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+   </div>
+
+   <script src="project.js"></script>
+   <script src="burgerMenu.js"></script>
+
+</body>
+
+</html>

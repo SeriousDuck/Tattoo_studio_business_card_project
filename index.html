@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/imask"></script>
+   <title>Black Sun</title>
+</head>
+
+<body>
+
+   <div class="warpper">
+      <!-- Header -->
+      <header class="header header-main">
+         <div class="container">
+            <div class="header__inner">
+               <a href="index.html" class="logo">
+                  <div class="logo__top">BS</div>
+                  <div class="logo__bottomn">studio</div>
+               </a>
+
+               <!-- menu -->
+               <nav class="menu">
+
+                  <button class="burger__menu">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </button>
+
+                  <ul class="menu__list">
+
+                     <li class="menu__close">
+                        <button class="menu__close-btn">
+                           <img src="img/close.svg" alt="">
+                        </button>
+                     </li> 
+
+                     <li class="menu__list-item">
+                        <a href="index.html" class="menu__list-link">Home</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="#contact" class="menu__list-link">Contacts</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="gallery.html" class="menu__list-link">Gallery</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="project.html" class="menu__list-link">Project / Gallery</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a href="#info" class="menu__list-link">Info</a>
+                     </li>                                         
+
+                     <ul class="burger__app-menu">                      
+                        <li class="burger__app-item">
+                           <a href="https://facebook.com" target="_blank" class="burger__app-link">
+                              <img src="img/facebook.svg" alt="" class="burger__app-img">
+                           </a>
+                        </li>
+                        <li class="burger__app-item">
+                           <a href="https://instagram.com" target="_blank" class="burger__app-link">
+                              <img src="img/instagram.svg" alt="" class="burger__app-img">
+                           </a>
+                        </li>
+                        <li class="burger__app-item">
+                           <a href="https://web.telegram.org/" target="_blank" class="burger__app-link">
+                              <img src="img/telegram.svg" alt="" class="burger__app-img">
+                           </a>
+                        </li>
+                     </ul> 
+
+                  </ul>                   
+               </nav>
+
+               <!-- app -->
+               <ul class="app">
+                  <li class="app__item">
+                     <a href="https://facebook.com" target="_blank" class="app__item-link">
+                        <img src="img/facebook.svg" alt="" class="app__item-img">
+                     </a>
+                  </li>
+                  <li class="app__item">
+                     <a href="https://instagram.com" target="_blank" class="app__item-link">
+                        <img src="img/instagram.svg" alt="" class="app__item-img">
+                     </a>
+                  </li>
+                  <li class="app__item">
+                     <a href="https://web.telegram.org/" target="_blank" class="app__item-link">
+                        <img src="img/telegram.svg" alt="" class="app__item-img">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+
+      <!-- Main -->
+      <main class="main">
+         <section class="top">
+            <div class="container">
+               <h1 class="title">Anime Tattoo</h1>
+               <h3 class="title-bottom">Black Sun</h3>
+               <p class="top__right-text">Wroclaw</p>
+
+               <div class="arrow">
+                  <div class="arrow__link-container">
+                     <a href="#contact" class="arrow__link">
+                        <img src="img/mbri-down.svg" alt="">
+                     </a>   
+                  </div>
+               </div>
+
+            </div>
+         </section>                
+
+         <div class="bg__img">
+            <div class="bg__header-img" style="background-image: url(img/header-img.jpeg)"></div>           
+         </div>
+
+         <section id="contact">
+            <div class="container">
+               <h2 class="section-title 
+               ">Contact Us</h2>
+               <p class="contact__title-text">
+                  write what you want
+               </p>
+               <div class="contact__form">
+                  <div class="contact__form-wrapper">
+                     <div class="contact__left-form">
+                        <ol class="contact__left-list">
+                           <li class="contact__left-text">Write your name.</li>
+                           <li class="contact__left-text">Write your number.</li>
+                           <li class="contact__left-text">
+                              Tell us briefly where you want to get a tattoo,
+                              the size of the tattoo and attach a photo.
+                           </li>
+                        </ol>
+                     </div>
+                     <div class="contact__right-form">
+                        <form action="#" class="right__form">
+                           <input type="text" class="form__input" placeholder="Name">
+                           <input 
+                              type="text"
+                              class="form__input-phone" 
+                              placeholder="+48(000)000-00-00"
+                           />
+                           <textarea class="form__textarea" placeholder="Your text"></textarea>
+                        </form>
+                       <div class="true-false__wrapper">
+                           <div class="true-false__text">
+                              <div id="true__text">everything successful</div>
+                              <div id="false__text">something wrong</div>
+                           </div>
+                       </div>                        
+                        <div class="upload__form">
+                           <div class="upload__form-right">
+                              <input type="file" id="upload__file" hidden="hidden">
+                              <button id="upload__btn">Load file:</button> 
+                              <span id="upload__text"> only (.jpg .jpeg)</span>
+                           </div>                        
+                           <button class="seng__message">Send</button> 
+                        </div>          
+                     </div>
+                  </div>
+               </div>               
+            </div>
+         </section>
+
+         <section class="main__gallery">
+            <div class="container">
+               <h2 class="section-title main__gallery-title">Gallery</h2>
+               <p class="main__gallery-subtitle">here you can see my works</p>
+               <div class="main__gallery-container">
+                  <div class="main__gallery-wrapper">                  
+                     <div class="main__gallery-card">
+                        <img src="img/main__gallery-img-1.jpg" class="main__gallery-img">
+                     </div>
+                     <div class="main__gallery-card">                     
+                        <img src="img/main__gallery-img-2.jpg" class="main__gallery-img">
+                     </div>
+                     <div class="main__gallery-card">
+                        <img src="img/main__gallery-img-3.jpg" class="main__gallery-img">
+                     </div>
+                     <div class="main__gallery-card">
+                        <img src="img/main__gallery-img-4.jpg" class="main__gallery-img">
+                     </div>                                                
+                  </div> 
+                  <div class="main__gallery-btnContainer">
+                     <a href="gallery.html" class="main__gallery-btn">More -></a>  
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__project">
+            <div class="container">
+               <h2 class="section-title main__project-title">Project</h2>
+               <p class="main__project-subtitle">here you can choose a sketch</p>
+               <div class="main__project-container">
+                  <div class="main__project-wrapper">
+                     <div class="main__project-card">
+                        <img src="img/main__project-img-1.jpg" class="main__project-img">
+                     </div>
+                     <div class="main__project-card">                     
+                        <img src="img/main__project-img-2.jpg" class="main__project-img">
+                     </div>
+                     <div class="main__project-card">
+                        <img src="img/main__project-img-3.jpg" class="main__project-img">
+                     </div>
+                     <div class="main__project-card">
+                        <img src="img/main__project-img-4.jpg" class="main__project-img">
+                     </div>                                                    
+                  </div>
+                  <div class="main__project-btnContainer">
+                     <a href="project.html" class="main__project-btn">More -></a>
+                  </div>      
+               </div>                                     
+            </div>            
+         </section>
+
+         <section id="info">
+            <div class="container">
+               <h2 class="section-title info__title">Info</h2>
+               <p class="info__subtitle">ANIME TATTOOS: ALL YOU’VE EVER WANTED TO KNOW</p>
+               <p class="info__text">
+                  Anime is an incredibly popular cartoon genre all over the world, and some hardcore fans choose to show
+                  off their love through body art.
+                  If you’re getting an anime tattoo, you want to be sure that you’re getting the best artwork possible,
+                  as with any tattoo, so it’s important to look into different tattoo styles to see which ones fit best.
+                  Some work better than others when it comes to anime tattoos, and not every style does this genre of
+                  tattooing proper justice.
+                  We offer advice on which tattoo styles are best suited to anime tattoo designs, and show you some of
+                  our favorite tattoos out there right now.
+                  If you don’t know much about anime, be prepared to make a list of must-see series and films, and get
+                  some inspiration into your next tattoo.
+               </p>
+               <ul class="info__app">
+                  <li class="info__item">
+                     <a href="https://mail.com" target="_blank" class="app__item-link">
+                        <img src="img/email.svg" alt="" class="info__item-img">
+                     </a>
+                  </li>
+                  <li class="info__item">
+                     <a href="https://facebook.com" target="_blank" class="app__item-link">
+                        <img src="img/facebook.svg" alt="" class="info__item-img">
+                     </a>
+                  </li>
+                  <li class="info__item">
+                     <a href="https://instagram.com" target="_blank" class="app__item-link">
+                        <img src="img/instagram.svg" alt="" class="info__item-img">
+                     </a>
+                  </li>
+                  <li class="info__item">
+                     <a href="https://web.telegram.org/" target="_blank" class="app__item-link">
+                        <img src="img/telegram.svg" alt="" class="info__item-img">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+
+      </main>
+   </div>
+   
+   <script src="index.js"></script>
+   <script src="burgerMenu.js"></script>
+
+</body>
+
+</html>
